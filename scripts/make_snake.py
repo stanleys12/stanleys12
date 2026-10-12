@@ -119,9 +119,9 @@ def build_svg(cells, ncols, label, theme):
         pout = round(t_out[i] / (N - 1) * 100, 3)
         if pout <= pin:
             continue
-        pin2 = min(round(pin + 0.15, 3), pout)
-        pout2 = min(round(pout + 0.15, 3), 100.0)
-        css.append(f"@keyframes b{i}{{0%,{pin}%{{opacity:0}}{pin2}%,{pout}%{{opacity:1}}{pout2}%,100%{{opacity:0}}}}")
+        # hard on at pin, hard off at pout (duplicate offsets = instant step, so the snake never fades)
+        css.append(f"@keyframes b{i}{{0%{{opacity:0}}{pin}%{{opacity:0}}{pin}%{{opacity:1}}"
+                   f"{pout}%{{opacity:1}}{pout}%{{opacity:0}}100%{{opacity:0}}}}")
         x, y = xy(col, row)
         body_rects.append(f'<rect x="{x-off:.1f}" y="{y-off:.1f}" width="{fat}" height="{fat}" rx="8" '
                           f'fill="{pal["body"]}" style="opacity:0;animation:b{i} {D}s linear infinite"/>')
