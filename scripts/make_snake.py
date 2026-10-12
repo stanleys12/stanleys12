@@ -91,6 +91,8 @@ def build_svg(cells, ncols, label, theme):
     css = [
         f".lbl{{font:600 15px -apple-system,Segoe UI,sans-serif;fill:{pal['label']}}}",
         f".snk{{width:{CELL}px;height:{CELL}px;will-change:transform}}",
+        "@keyframes chompc{0%,42%{opacity:1}58%,100%{opacity:0}}",   # closed smile
+        "@keyframes chompo{0%,42%{opacity:0}58%,100%{opacity:1}}",   # open mouth (the chomp)
     ]
     stops = []
     for i, (col, row) in enumerate(path):
@@ -104,7 +106,7 @@ def build_svg(cells, ncols, label, theme):
             continue
         i = idx_of[(c["col"], c["row"])]
         p = min(99.0, round(i / (N - 1) * 100, 3))
-        p2 = min(100.0, round(p + 0.6, 3))
+        p2 = min(100.0, round(p + 2.6, 3))   # visible dissolve as the head eats it, not an instant blink
         name = f"eat{i}"
         col_hex = pal["levels"][level(c["count"])]
         css.append(f"@keyframes {name}{{0%,{p}%{{fill:{col_hex}}}{p2}%,100%{{fill:{pal['empty']}}}}}")
@@ -146,8 +148,12 @@ def build_svg(cells, ncols, label, theme):
         f'<circle cx="{CELL - ex:.1f}" cy="{ey:.1f}" r="{er:.1f}" fill="#fff"/>'
         f'<circle cx="{ex + pr * 0.3:.1f}" cy="{ey:.1f}" r="{pr:.1f}" fill="{dark}"/>'
         f'<circle cx="{CELL - ex + pr * 0.3:.1f}" cy="{ey:.1f}" r="{pr:.1f}" fill="{dark}"/>'
-        f'<path d="M{CELL * 0.32:.1f},{CELL * 0.62:.1f} Q{CELL * 0.5:.1f},{CELL * 0.8:.1f} '
-        f'{CELL * 0.68:.1f},{CELL * 0.62:.1f}" stroke="{dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>'
+        # chomping mouth: a smile and an open mouth alternate fast, so the head looks like it's eating
+        f'<path d="M{CELL * 0.33:.1f},{CELL * 0.62:.1f} Q{CELL * 0.5:.1f},{CELL * 0.78:.1f} '
+        f'{CELL * 0.67:.1f},{CELL * 0.62:.1f}" stroke="{dark}" stroke-width="1.8" fill="none" '
+        f'stroke-linecap="round" style="animation:chompc .45s infinite"/>'
+        f'<ellipse cx="{CELL * 0.5:.1f}" cy="{CELL * 0.66:.1f}" rx="{CELL * 0.15:.1f}" ry="{CELL * 0.12:.1f}" '
+        f'fill="{dark}" style="animation:chompo .45s infinite"/>'
     )
     parts.append(f'<g class="snk" style="transform:translate({x0}px,{y0}px);'
                  f'animation:snake {D}s linear infinite;animation-delay:0s">{face}</g>')
