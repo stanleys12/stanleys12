@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USER: stanleys12
-          SNAKE_SECS_PER_CELL: "0.5"   # higher = slower (~24s loop over the 2-month grid)
+          SNAKE_SECS_PER_CELL: "0.35"   # higher = slower (~30s loop over the 3-month grid)
         run: python3 scripts/make_snake.py
 
       - name: Publish to the output branch

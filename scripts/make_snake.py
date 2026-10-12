@@ -46,7 +46,9 @@ def hexlerp(a, b, t):
 def fetch_weeks():
     today = dt.date.today()
     first_this = today.replace(day=1)
-    range_start = (first_this - dt.timedelta(days=1)).replace(day=1)   # first of the previous month
+    range_start = first_this
+    for _ in range(2):                                     # step back two whole months → a 3-month window
+        range_start = (range_start - dt.timedelta(days=1)).replace(day=1)
     q = {
         "query": "query($u:String!,$f:DateTime!,$t:DateTime!){user(login:$u){contributionsCollection(from:$f,to:$t)"
                  "{contributionCalendar{weeks{contributionDays{date contributionCount weekday}}}}}}",
@@ -129,12 +131,26 @@ def build_svg(cells, ncols, label, theme):
     head, tail = pal["snake"][0], pal["snake"][-1]
     M = SNAKE_LEN * SEG_PER_CELL          # body points trailing the head
     sub = step / SEG_PER_CELL             # time gap between adjacent segments (a fraction of a cell)
-    for j in range(M, -1, -1):            # tail first so the head renders on top
+    for j in range(M, 0, -1):             # body: tail -> just behind the head, so the face draws on top
         colr = hexlerp(head, tail, j / M)
         delay = round(-(D - j * sub), 2)
         parts.append(f'<rect class="snk" width="{CELL}" height="{CELL}" rx="{CELL // 2}" fill="{colr}" '
                      f'style="transform:translate({x0}px,{y0}px);animation:snake {D}s linear infinite;'
                      f'animation-delay:{delay}s"/>')
+    # head with a face (two eyes + a smile); rides the same path animation, no trailing delay
+    ex, ey, er = CELL * 0.32, CELL * 0.36, CELL * 0.14
+    pr, dark = er * 0.52, "#10151c"
+    face = (
+        f'<rect width="{CELL}" height="{CELL}" rx="{CELL // 2}" fill="{head}"/>'
+        f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="{er:.1f}" fill="#fff"/>'
+        f'<circle cx="{CELL - ex:.1f}" cy="{ey:.1f}" r="{er:.1f}" fill="#fff"/>'
+        f'<circle cx="{ex + pr * 0.3:.1f}" cy="{ey:.1f}" r="{pr:.1f}" fill="{dark}"/>'
+        f'<circle cx="{CELL - ex + pr * 0.3:.1f}" cy="{ey:.1f}" r="{pr:.1f}" fill="{dark}"/>'
+        f'<path d="M{CELL * 0.32:.1f},{CELL * 0.62:.1f} Q{CELL * 0.5:.1f},{CELL * 0.8:.1f} '
+        f'{CELL * 0.68:.1f},{CELL * 0.62:.1f}" stroke="{dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>'
+    )
+    parts.append(f'<g class="snk" style="transform:translate({x0}px,{y0}px);'
+                 f'animation:snake {D}s linear infinite;animation-delay:0s">{face}</g>')
     parts.append("</svg>")
     return "\n".join(parts)
 
