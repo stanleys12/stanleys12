@@ -23,8 +23,8 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=stanleys12&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=stanleys12&hide_border=true&theme=tokyonight" alt="streak" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=stanleys12&show_icons=true&count_private=true&hide_border=true&theme=tokyonight" alt="stats" />
+<img height="165" src="https://streak-stats.demolab.com/?user=stanleys12&hide_border=true&theme=tokyonight" alt="streak" />
 
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=stanleys12&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" alt="top languages" />
 
@@ -43,8 +43,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/stanleys12/stanleys12/output/github-contribution-grid-snake.svg" />
   <img alt="contribution snake" src="https://raw.githubusercontent.com/stanleys12/stanleys12/output/github-contribution-grid-snake.svg" />
 </picture>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=stanleys12&bg_color=1a1b27&color=6e7fea&line=6e7fea&point=ffffff&area=true&hide_border=true" alt="activity graph" />
 
 </div>
 
