@@ -32,6 +32,7 @@ jobs:
 
       - name: Slow the snake down (scale the one master animation duration)
         run: |
+          sudo chown -R "$(id -u):$(id -g)" dist   # Platane/snk writes as root in its container
           python3 - <<'PY'
           import glob, re
           FACTOR = 2.0   # higher = slower
