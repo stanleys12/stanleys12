@@ -17,7 +17,8 @@ USER = os.environ.get("PROFILE_USER", "stanleys12")
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 OUT_DIR = os.environ.get("SNAKE_OUT", "dist")
 SECS_PER_CELL = float(os.environ.get("SNAKE_SECS_PER_CELL", "0.5"))   # higher = slower
-BODY = 5                      # trailing body segments behind the head
+SNAKE_LEN = 5                 # snake body length, in cells
+SEG_PER_CELL = 3              # sub-cell segments so the body reads as ONE continuous snake, not dots
 
 CELL, GAP, PAD, TOP = 30, 7, 10, 40     # bigger cells so it reads large on the profile
 PITCH = CELL + GAP
@@ -34,6 +35,12 @@ PALETTES = {
 
 def level(c):
     return 0 if c == 0 else 1 if c <= 2 else 2 if c <= 5 else 3 if c <= 9 else 4
+
+
+def hexlerp(a, b, t):
+    a, b = a.lstrip("#"), b.lstrip("#")
+    ch = [round(int(a[i:i + 2], 16) * (1 - t) + int(b[i:i + 2], 16) * t) for i in (0, 2, 4)]
+    return "#%02x%02x%02x" % tuple(ch)
 
 
 def fetch_weeks():
@@ -118,11 +125,14 @@ def build_svg(cells, ncols, label, theme):
                 parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" '
                              f'fill="{pal["empty"]}"{faint}/>')
 
-    for k in range(BODY, -1, -1):   # tail first so the head renders on top
-        x0, y0 = xy(*path[0])
-        delay = round(-(D - k * step), 2)
-        colr = pal["snake"][min(k, len(pal["snake"]) - 1)]
-        parts.append(f'<rect class="snk" width="{CELL}" height="{CELL}" rx="7" fill="{colr}" '
+    x0, y0 = xy(*path[0])
+    head, tail = pal["snake"][0], pal["snake"][-1]
+    M = SNAKE_LEN * SEG_PER_CELL          # body points trailing the head
+    sub = step / SEG_PER_CELL             # time gap between adjacent segments (a fraction of a cell)
+    for j in range(M, -1, -1):            # tail first so the head renders on top
+        colr = hexlerp(head, tail, j / M)
+        delay = round(-(D - j * sub), 2)
+        parts.append(f'<rect class="snk" width="{CELL}" height="{CELL}" rx="{CELL // 2}" fill="{colr}" '
                      f'style="transform:translate({x0}px,{y0}px);animation:snake {D}s linear infinite;'
                      f'animation-delay:{delay}s"/>')
     parts.append("</svg>")
