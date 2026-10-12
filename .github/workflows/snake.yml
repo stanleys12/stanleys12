@@ -1,15 +1,16 @@
 name: snake
 
-# Generates the contribution-snake animation and publishes the SVGs to the `output` branch,
-# which the README references. Standard profile-readme pattern (Platane/snk).
+# Builds our OWN "snake eats THIS MONTH's contributions" animation (scripts/make_snake.py) and
+# publishes the SVGs to the `output` branch, which the README references. Month-scoped + slow —
+# which Platane/snk couldn't do (it's year-only, fixed speed).
 
 on:
   schedule:
-    - cron: "33 3 * * *"   # once a day
+    - cron: "33 3 * * *"   # once a day (so it rolls over to the new month on its own)
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/snake.yml]
+    paths: [.github/workflows/snake.yml, scripts/make_snake.py]
 
 permissions:
   contents: write
@@ -22,27 +23,13 @@ jobs:
   snake:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake SVGs
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-light
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Slow the snake down (scale the one master animation duration)
-        run: |
-          sudo chown -R "$(id -u):$(id -g)" dist   # Platane/snk writes as root in its container
-          python3 - <<'PY'
-          import glob, re
-          FACTOR = 2.0   # higher = slower
-          for f in glob.glob("dist/*.svg"):
-              s = open(f).read()
-              s = re.sub(r"(animation:\s*\S+\s+)(\d+)(ms)",
-                         lambda m: f"{m.group(1)}{int(int(m.group(2))*FACTOR)}{m.group(3)}", s)
-              open(f, "w").write(s)
-          print("snake slowed", FACTOR, "x")
-          PY
+      - uses: actions/checkout@v4
+      - name: Generate this-month snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: stanleys12
+          SNAKE_SECS_PER_CELL: "0.8"   # higher = slower
+        run: python3 scripts/make_snake.py
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v4
