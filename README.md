@@ -14,7 +14,6 @@
 
 - 🔒 **AI-agent security** — [**SkillJail**](https://github.com/stanleys12/skilljail), a kernel-enforced least-privilege sandbox for AI-agent skills, and [**skill-scanner**](https://github.com/stanleys12/skill-scanner), a read-only, offline scanner that tells you whether a skill is safe to install *before* it touches your machine.
 - 🤖 **Automation & ML** — pipelines that do real work end-to-end, from OSS contribution to applied ML.
-- 📈 **Quant research** — evidence-first market research and backtesting.
 - 🌍 **Open source** — I contribute fixes upstream across the ecosystem (see the auto-updating list below).
 
 ---
