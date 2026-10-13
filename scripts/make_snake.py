@@ -112,44 +112,62 @@ def build_svg(cells, ncols, label, theme):
     stops = "".join(f"{pct(i)}%{{transform:translate({x:.1f}px,{y:.1f}px)}}" for i, (x, y) in enumerate(pathpx))
     css.append("@keyframes snake{" + stops + "}")
 
-    # Soft pulse on each real contribution as the head glides over it (board is never erased)
-    def kf_pulse(name, lo, mid, hi):
+    # The snake EATS: when the head reaches a contribution it snaps to the empty colour (bite), stays eaten
+    # while the body and a short trail pass over it, then grows back to its real colour — so you clearly see
+    # each box get eaten, but the board refills behind the snake and never looks wiped out. Driven by `fill`
+    # (animatable, and — unlike opacity — it advances under headless virtual-time so it's screenshot-verifiable).
+    EPS = 0.25        # bite sharpness (% of loop)
+    TRAIL = 5         # cells of visible eaten gap left behind the tail before it regrows
+    GROW = 2.0        # cells over which a box fades back in
+
+    def kf_fill(name, stops):
         out, last = [], -1.0
-        for o, v in [(0.0, 0), (lo, 0), (mid, 0.5), (hi, 0), (100.0, 0)]:
+        for o, v in stops:
             o = clamp(o)
             if o <= last:
                 o = round(min(100.0, last + 0.01), 3)
             out.append((o, v)); last = o
-        return f"@keyframes {name}{{" + "".join(f"{o}%{{opacity:{v}}}" for o, v in out) + "}"
+        return f"@keyframes {name}{{" + "".join(f"{o}%{{fill:{v}}}" for o, v in out) + "}"
 
-    glow_rects = []
+    eat_cell = {}     # (col,row) -> animation name, for contributions that get eaten
     for c in cells:
         if not (c["in_range"] and c["count"] > 0):
             continue
         i = order[(c["col"], c["row"])]
-        b = pct(i)
-        css.append(kf_pulse(f"g{i}", clamp(b - 1.2), b, clamp(b + 3.0)))
-        x, y = xy(c["col"], c["row"])
-        glow_rects.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" '
-                          f'fill="{pal["glow"]}" style="opacity:0;animation:g{i} {D}s linear infinite"/>')
+        real = pal["levels"][level(c["count"])]
+        empty = pal["empty"]
+        lo = pct(i)                                   # head arrives → bite
+        g0 = pct(i + BODY_LEN + TRAIL)                # tail + trail cleared → start regrowing
+        g1 = pct(i + BODY_LEN + TRAIL + GROW)         # fully grown back
+        stops = [(0.0, real)]
+        if lo > 0:
+            stops += [(lo - EPS, real)]
+        stops += [(lo, empty)]
+        if g0 >= 100:                                 # eaten right up to the loop reset (far-right cells)
+            stops += [(100.0, empty)]
+        else:
+            stops += [(g0, empty), (g1, real), (100.0, real)]
+        css.append(kf_fill(f"e{i}", stops))
+        eat_cell[(c["col"], c["row"])] = f"e{i}"
 
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
     parts.append("<style>" + "".join(css) + "</style>")
     parts.append(f'<text class="lbl" x="{PAD}" y="24">{label}</text>')
 
-    # static board — every cell keeps its real colour the whole loop (alive, never wiped)
+    # board — contributions animate (eaten → regrow) via fill; everything else is static
     for col in range(ncols):
         for row in range(7):
             c = by_pos.get((col, row))
             x, y = xy(col, row)
-            if c and c["in_range"] and c["count"] > 0:
-                fill = pal["levels"][level(c["count"])]
+            anim = eat_cell.get((col, row))
+            if anim:
+                real = pal["levels"][level(c["count"])]
+                parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" fill="{real}" '
+                             f'style="animation:{anim} {D}s linear infinite"/>')
             else:
                 fill = pal["empty"]
-            faint = ' opacity="0.45"' if (c and not c["in_range"]) else ''
-            parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" fill="{fill}"{faint}/>')
-
-    parts.extend(glow_rects)   # pulses, above the board
+                faint = ' opacity="0.45"' if (c and not c["in_range"]) else ''
+                parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" fill="{fill}"{faint}/>')
 
     # The snake: a head plus BODY_LEN trailing segments, all on the SAME path keyframe. Each segment k lags
     # the head by k cells via a negative animation-delay (k*step - D keeps it always-running, no first-loop
