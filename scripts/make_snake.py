@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
-"""Custom 'snake eats the last 3 months of contributions, and GROWS as it eats' animation.
+"""Clean 'snake weaves through the last 3 months of contributions' animation.
 
 Fetches the contribution calendar for [first-of-two-months-ago .. today] from the GitHub GraphQL API
-and renders an animated SVG: a snake snakes through the grid (boustrophedon by week), chomping, with
-eyes; each contribution day dissolves as the head passes, and the snake's tail lags one extra cell for
-every day eaten, so the body lengthens over the loop (classic Snake). Writes dist/*.svg. Deterministic,
-stdlib only, no AI. Speed via SNAKE_SECS_PER_CELL (higher = slower).
+and renders an animated SVG: the board stays FULL and alive (every contribution keeps its real colour),
+and a clearly visible snake — an eyed, chomping head plus a fixed-length trailing body — weaves along the
+grid (boustrophedon by week). Each contribution gives a soft pulse as the head passes over it; nothing is
+erased. Writes dist/*.svg. Deterministic, stdlib only, no AI. Speed via SNAKE_SECS_PER_CELL (higher = slower).
 """
 import datetime as dt
 import json
 import os
 import sys
 import urllib.request
-from collections import deque
 
 USER = os.environ.get("PROFILE_USER", "stanleys12")
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 OUT_DIR = os.environ.get("SNAKE_OUT", "dist")
-SECS_PER_CELL = float(os.environ.get("SNAKE_SECS_PER_CELL", "0.35"))   # higher = slower
-SNAKE_BASE = 3                 # starting body length (cells); grows +1 per contribution eaten
+SECS_PER_CELL = float(os.environ.get("SNAKE_SECS_PER_CELL", "0.3"))   # higher = slower
+BODY_LEN = int(os.environ.get("SNAKE_BODY", "6"))                     # trailing body length (cells)
 
 CELL, GAP, PAD, TOP = 30, 7, 10, 40
 PITCH = CELL + GAP
@@ -26,15 +25,21 @@ PITCH = CELL + GAP
 PALETTES = {
     "light": {"empty": "#ebedf0", "label": "#57606a",
               "levels": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
-              "head": "#6e7fea", "body": "#8b9bf2"},
+              "head": "#5a6fe0", "tail": "#aeb8f3", "glow": "#ffffff"},
     "dark":  {"empty": "#161b22", "label": "#8b949e",
               "levels": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
-              "head": "#9db0ff", "body": "#6e7fea"},
+              "head": "#9db0ff", "tail": "#3b4493", "glow": "#ffffff"},
 }
 
 
 def level(c):
     return 0 if c == 0 else 1 if c <= 2 else 2 if c <= 5 else 3 if c <= 9 else 4
+
+
+def hexlerp(c1, c2, t):
+    c1, c2 = c1.lstrip("#"), c2.lstrip("#")
+    ch = [round(int(c1[i:i + 2], 16) + (int(c2[i:i + 2], 16) - int(c1[i:i + 2], 16)) * t) for i in (0, 2, 4)]
+    return "#%02x%02x%02x" % tuple(ch)
 
 
 def fetch_weeks():
@@ -69,16 +74,33 @@ def build_svg(cells, ncols, label, theme):
     H = TOP + 7 * PITCH - GAP + PAD
     xy = lambda col, row: (PAD + col * PITCH, TOP + row * PITCH)
     by_pos = {(c["col"], c["row"]): c for c in cells}
-    off, fat = GAP / 2, PITCH            # fat/offset so body cells bridge the gaps into one snake
+    off, fat = GAP / 2, PITCH            # fat/offset so segments bridge the gaps into one continuous snake
 
-    path = []
+    # Boustrophedon grid path: top→bottom on even columns, bottom→top on odd, left→right (old→new).
+    grid = []
     for col in range(ncols):
         for row in (range(7) if col % 2 == 0 else range(6, -1, -1)):
-            path.append((col, row))
-    N = max(len(path), 2)
-    step = SECS_PER_CELL
-    D = round(N * step, 2)
-    idx_of = {p: i for i, p in enumerate(path)}
+            grid.append(xy(col, row))
+    # Off-screen runways so the loop restart (head jumps from exit back to entry) happens out of view —
+    # no teleport flash, no fade hacks. Length covers the whole body plus a margin.
+    RUN = BODY_LEN + 3
+    gx0, gy0 = grid[0]
+    gx1, gy1 = grid[-1]
+    entry = [(gx0 - PITCH * (RUN - m), gy0) for m in range(RUN)]   # slithers in from the left
+    exit_ = [(gx1 + PITCH * (m + 1), gy1) for m in range(RUN)]     # slithers off to the right
+    pathpx = entry + grid + exit_
+    M = max(len(pathpx), 2)
+    D = round(M * SECS_PER_CELL, 2)
+    # map a grid cell → its index within pathpx (entry offset + position in boustrophedon order)
+    order = {}
+    k = 0
+    for col in range(ncols):
+        for row in (range(7) if col % 2 == 0 else range(6, -1, -1)):
+            order[(col, row)] = len(entry) + k
+            k += 1
+
+    clamp = lambda v: max(0.0, min(100.0, round(v, 3)))
+    pct = lambda s: clamp(s / (M - 1) * 100)
 
     css = [
         f".lbl{{font:600 15px -apple-system,Segoe UI,sans-serif;fill:{pal['label']}}}",
@@ -86,71 +108,66 @@ def build_svg(cells, ncols, label, theme):
         "@keyframes chompc{0%,42%{opacity:1}58%,100%{opacity:0}}",
         "@keyframes chompo{0%,42%{opacity:0}58%,100%{opacity:1}}",
     ]
-    # head path keyframes
-    stops = [f"{round(i/(N-1)*100,3)}%{{transform:translate({xy(c,r)[0]}px,{xy(c,r)[1]}px)}}"
-             for i, (c, r) in enumerate(path)]
-    css.append("@keyframes snake{" + "".join(stops) + "}")
+    # One shared path keyframe: head and every body segment ride it, the body lagging via animation-delay.
+    stops = "".join(f"{pct(i)}%{{transform:translate({x:.1f}px,{y:.1f}px)}}" for i, (x, y) in enumerate(pathpx))
+    css.append("@keyframes snake{" + stops + "}")
 
-    # food cells dissolve as the head passes
-    eat_cls = {}
+    # Soft pulse on each real contribution as the head glides over it (board is never erased)
+    def kf_pulse(name, lo, mid, hi):
+        out, last = [], -1.0
+        for o, v in [(0.0, 0), (lo, 0), (mid, 0.5), (hi, 0), (100.0, 0)]:
+            o = clamp(o)
+            if o <= last:
+                o = round(min(100.0, last + 0.01), 3)
+            out.append((o, v)); last = o
+        return f"@keyframes {name}{{" + "".join(f"{o}%{{opacity:{v}}}" for o, v in out) + "}"
+
+    glow_rects = []
     for c in cells:
-        if not c["in_range"] or c["count"] == 0:
+        if not (c["in_range"] and c["count"] > 0):
             continue
-        i = idx_of[(c["col"], c["row"])]
-        p = min(99.0, round(i / (N - 1) * 100, 3))
-        p2 = min(100.0, round(p + 2.6, 3))
-        col_hex = pal["levels"][level(c["count"])]
-        css.append(f"@keyframes eat{i}{{0%,{p}%{{fill:{col_hex}}}{p2}%,100%{{fill:{pal['empty']}}}}}")
-        eat_cls[(c["col"], c["row"])] = (f"eat{i}", col_hex)
-
-    # GROWING snake: simulate the body as a queue of occupied cells; the tail only drops a cell when
-    # the body is longer than its current target length, and the target grows +1 for each food eaten.
-    food = [bool(by_pos.get(p) and by_pos[p]["in_range"] and by_pos[p]["count"] > 0) for p in path]
-    eaten, dq, t_out = 0, deque(), [N - 1] * N
-    for h in range(N):
-        dq.append(h)
-        if food[h]:
-            eaten += 1
-        while len(dq) > SNAKE_BASE + eaten:
-            t_out[dq.popleft()] = h
-    body_rects = []
-    for i, (col, row) in enumerate(path):
-        pin = max(0.0, round((i - 0.5) / (N - 1) * 100, 3))
-        pout = round(t_out[i] / (N - 1) * 100, 3)
-        if pout <= pin:
-            continue
-        # hard on at pin, hard off at pout (duplicate offsets = instant step, so the snake never fades)
-        css.append(f"@keyframes b{i}{{0%{{opacity:0}}{pin}%{{opacity:0}}{pin}%{{opacity:1}}"
-                   f"{pout}%{{opacity:1}}{pout}%{{opacity:0}}100%{{opacity:0}}}}")
-        x, y = xy(col, row)
-        body_rects.append(f'<rect x="{x-off:.1f}" y="{y-off:.1f}" width="{fat}" height="{fat}" rx="8" '
-                          f'fill="{pal["body"]}" style="opacity:0;animation:b{i} {D}s linear infinite"/>')
+        i = order[(c["col"], c["row"])]
+        b = pct(i)
+        css.append(kf_pulse(f"g{i}", clamp(b - 1.2), b, clamp(b + 3.0)))
+        x, y = xy(c["col"], c["row"])
+        glow_rects.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" '
+                          f'fill="{pal["glow"]}" style="opacity:0;animation:g{i} {D}s linear infinite"/>')
 
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
     parts.append("<style>" + "".join(css) + "</style>")
     parts.append(f'<text class="lbl" x="{PAD}" y="24">{label}</text>')
 
+    # static board — every cell keeps its real colour the whole loop (alive, never wiped)
     for col in range(ncols):
         for row in range(7):
             c = by_pos.get((col, row))
             x, y = xy(col, row)
             if c and c["in_range"] and c["count"] > 0:
-                name, col_hex = eat_cls[(col, row)]
-                parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" '
-                             f'fill="{col_hex}" style="animation:{name} {D}s linear infinite"/>')
+                fill = pal["levels"][level(c["count"])]
             else:
-                faint = ' opacity="0.4"' if (c and not c["in_range"]) else ''
-                parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" '
-                             f'fill="{pal["empty"]}"{faint}/>')
+                fill = pal["empty"]
+            faint = ' opacity="0.45"' if (c and not c["in_range"]) else ''
+            parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="5" fill="{fill}"{faint}/>')
 
-    parts.extend(body_rects)   # the growing body (lit cells), above the grid
+    parts.extend(glow_rects)   # pulses, above the board
 
-    # head with a chomping face, glides along the path on top of everything
-    x0, y0 = xy(*path[0])
+    # The snake: a head plus BODY_LEN trailing segments, all on the SAME path keyframe. Each segment k lags
+    # the head by k cells via a negative animation-delay (k*step - D keeps it always-running, no first-loop
+    # blank). Colour grades head→tail. Drawn tail-first so the head sits on top. All transform-based, so it
+    # stays a clean continuous snake with no opacity tricks.
+    step = SECS_PER_CELL
+    for kk in range(BODY_LEN, 0, -1):
+        delay = round(kk * step - D, 2)
+        colr = hexlerp(pal["head"], pal["tail"], kk / BODY_LEN)
+        parts.append(f'<rect x="{-off:.1f}" y="{-off:.1f}" width="{fat}" height="{fat}" rx="9" fill="{colr}" '
+                     f'style="transform:translate({pathpx[0][0]:.1f}px,{pathpx[0][1]:.1f}px);'
+                     f'animation:snake {D}s linear infinite;animation-delay:{delay}s"/>')
+
+    # eyed, chomping head — glides along the path on top of everything
     ex, ey, er = CELL * 0.32, CELL * 0.36, CELL * 0.14
     pr, dark = er * 0.52, "#10151c"
     face = (
-        f'<rect x="{-off:.1f}" y="{-off:.1f}" width="{fat}" height="{fat}" rx="8" fill="{pal["head"]}"/>'
+        f'<rect x="{-off:.1f}" y="{-off:.1f}" width="{fat}" height="{fat}" rx="9" fill="{pal["head"]}"/>'
         f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="{er:.1f}" fill="#fff"/>'
         f'<circle cx="{CELL - ex:.1f}" cy="{ey:.1f}" r="{er:.1f}" fill="#fff"/>'
         f'<circle cx="{ex + pr * 0.3:.1f}" cy="{ey:.1f}" r="{pr:.1f}" fill="{dark}"/>'
@@ -161,8 +178,8 @@ def build_svg(cells, ncols, label, theme):
         f'<ellipse cx="{CELL * 0.5:.1f}" cy="{CELL * 0.66:.1f}" rx="{CELL * 0.15:.1f}" ry="{CELL * 0.12:.1f}" '
         f'fill="{dark}" style="animation:chompo .45s infinite"/>'
     )
-    parts.append(f'<g class="snk" style="transform:translate({x0}px,{y0}px);'
-                 f'animation:snake {D}s linear infinite;animation-delay:0s">{face}</g>')
+    parts.append(f'<g class="snk" style="transform:translate({pathpx[0][0]:.1f}px,{pathpx[0][1]:.1f}px);'
+                 f'animation:snake {D}s linear infinite">{face}</g>')
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -178,9 +195,9 @@ def main():
                          ("dark", "github-contribution-grid-snake-dark.svg")):
         with open(os.path.join(OUT_DIR, fname), "w", encoding="utf-8") as f:
             f.write(build_svg(cells, ncols, label, theme))
-    eaten = sum(1 for c in cells if c["in_range"] and c["count"] > 0)
-    print(f"wrote {OUT_DIR}/ snake for {label}: {ncols} weeks, {eaten} active days "
-          f"(grows {SNAKE_BASE}→{SNAKE_BASE + eaten} cells)")
+    active = sum(1 for c in cells if c["in_range"] and c["count"] > 0)
+    print(f"wrote {OUT_DIR}/ snake for {label}: {ncols} weeks, {active} active days, "
+          f"body {BODY_LEN} cells, ~{round(ncols * 7 * SECS_PER_CELL)}s loop")
     return 0
 
 
