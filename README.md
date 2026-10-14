@@ -57,6 +57,7 @@
 - [github/advisory-database](https://github.com/github/advisory-database)
 - [gyroflow/gyroflow](https://github.com/gyroflow/gyroflow)
 - [jaegertracing/jaeger](https://github.com/jaegertracing/jaeger)
+- [jtroo/kanata](https://github.com/jtroo/kanata)
 - [kornia/kornia](https://github.com/kornia/kornia)
 - [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 - [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia)
