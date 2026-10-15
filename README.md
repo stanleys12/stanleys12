@@ -59,6 +59,8 @@
 - [jaegertracing/jaeger](https://github.com/jaegertracing/jaeger)
 - [jtroo/kanata](https://github.com/jtroo/kanata)
 - [kornia/kornia](https://github.com/kornia/kornia)
+- [Mobile-Artificial-Intelligence/maid](https://github.com/Mobile-Artificial-Intelligence/maid)
+- [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder)
 - [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 - [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia)
 - [numpy/numpy](https://github.com/numpy/numpy)
