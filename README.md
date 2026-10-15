@@ -51,6 +51,7 @@
 
 <!-- CONTRIBUTIONS:START -->
 - [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) · 2×
+- [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)
 - [borgbackup/borg](https://github.com/borgbackup/borg)
 - [datachain-ai/datachain](https://github.com/datachain-ai/datachain)
 - [duplicati/duplicati](https://github.com/duplicati/duplicati)
