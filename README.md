@@ -66,6 +66,7 @@
 - [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia)
 - [numpy/numpy](https://github.com/numpy/numpy)
 - [openai/codex-security](https://github.com/openai/codex-security)
+- [openclaw/openclaw](https://github.com/openclaw/openclaw)
 - [sgl-project/sglang](https://github.com/sgl-project/sglang)
 <!-- CONTRIBUTIONS:END -->
 
