@@ -72,6 +72,4 @@
 
 ---
 
-<div align="center">
-<sub>🤖 This README is partly self-updating — a scheduled GitHub Action refreshes the stats and the contributions list as my work gets merged.</sub>
-</div>
+
