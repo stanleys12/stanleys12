@@ -18,6 +18,17 @@ TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 README = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
 START, END = "<!-- CONTRIBUTIONS:START -->", "<!-- CONTRIBUTIONS:END -->"
 
+# Ranking: these flagship projects lead in this order (what a reader recognises first); every other repo
+# follows by GitHub stars, so new merges slot in on their own. Edit this list to re-rank the top.
+FLAGSHIP = [
+    "numpy/numpy",
+    "puppeteer/puppeteer",
+    "openclaw/openclaw",
+    "openai/codex-security",
+    "sgl-project/sglang",
+    "jaegertracing/jaeger",
+]
+
 
 def api(url):
     req = urllib.request.Request(url, headers={
@@ -50,14 +61,31 @@ def merged_repos():
     return counts
 
 
+def stars(full):
+    try:
+        return int(api(f"https://api.github.com/repos/{full}").get("stargazers_count") or 0)
+    except Exception:  # noqa: BLE001 — a missing star count only affects ordering
+        return 0
+
+
+def fmt_stars(n):
+    if n >= 1000:
+        return f"{n / 1000:.1f}".rstrip("0").rstrip(".") + "k"
+    return str(n)
+
+
 def render(counts):
     if not counts:
         return "_No merged external contributions found yet._"
-    rows = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0].lower()))
+    flag = {r.lower(): i for i, r in enumerate(FLAGSHIP)}
+    star = {full: stars(full) for full in counts}
+    rows = sorted(counts, key=lambda f: (flag.get(f.lower(), len(flag)), -star[f], f.lower()))
     lines = []
-    for full, n in rows:
-        times = f" · {n}×" if n > 1 else ""
-        lines.append(f"- [{full}](https://github.com/{full}){times}")
+    for full in rows:
+        n = counts[full]
+        times = f" · {n} PRs" if n > 1 else ""
+        st = f" · ★ {fmt_stars(star[full])}" if star[full] else ""
+        lines.append(f"- [{full}](https://github.com/{full}){st}{times}")
     return "\n".join(lines)
 
 

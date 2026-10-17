@@ -47,27 +47,27 @@
 
 ### Open-source contributions
 
-> Repositories where I've had pull requests merged. This list rebuilds itself via GitHub Actions as new PRs land.
+> Repositories where I've had pull requests merged, most notable first. This list rebuilds itself via GitHub Actions as new PRs land.
 
 <!-- CONTRIBUTIONS:START -->
-- [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) · 2×
-- [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)
-- [borgbackup/borg](https://github.com/borgbackup/borg)
-- [datachain-ai/datachain](https://github.com/datachain-ai/datachain)
-- [duplicati/duplicati](https://github.com/duplicati/duplicati)
-- [github/advisory-database](https://github.com/github/advisory-database)
-- [gyroflow/gyroflow](https://github.com/gyroflow/gyroflow)
-- [jaegertracing/jaeger](https://github.com/jaegertracing/jaeger)
-- [jtroo/kanata](https://github.com/jtroo/kanata)
-- [kornia/kornia](https://github.com/kornia/kornia)
-- [Mobile-Artificial-Intelligence/maid](https://github.com/Mobile-Artificial-Intelligence/maid)
-- [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder)
-- [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-- [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia)
-- [numpy/numpy](https://github.com/numpy/numpy)
-- [openai/codex-security](https://github.com/openai/codex-security)
-- [openclaw/openclaw](https://github.com/openclaw/openclaw)
-- [sgl-project/sglang](https://github.com/sgl-project/sglang)
+- [numpy/numpy](https://github.com/numpy/numpy) · ★ 33k
+- [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) · ★ 95.7k · 2 PRs
+- [openclaw/openclaw](https://github.com/openclaw/openclaw) · ★ 392.2k
+- [openai/codex-security](https://github.com/openai/codex-security) · ★ 11.1k
+- [sgl-project/sglang](https://github.com/sgl-project/sglang) · ★ 37.2k
+- [jaegertracing/jaeger](https://github.com/jaegertracing/jaeger) · ★ 23.3k
+- [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · ★ 136.6k
+- [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) · ★ 38k
+- [duplicati/duplicati](https://github.com/duplicati/duplicati) · ★ 15.1k
+- [borgbackup/borg](https://github.com/borgbackup/borg) · ★ 13.9k
+- [kornia/kornia](https://github.com/kornia/kornia) · ★ 11.4k
+- [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia) · ★ 11.4k
+- [gyroflow/gyroflow](https://github.com/gyroflow/gyroflow) · ★ 9.6k
+- [jtroo/kanata](https://github.com/jtroo/kanata) · ★ 8k
+- [datachain-ai/datachain](https://github.com/datachain-ai/datachain) · ★ 2.8k
+- [Mobile-Artificial-Intelligence/maid](https://github.com/Mobile-Artificial-Intelligence/maid) · ★ 2.7k
+- [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder) · ★ 2.5k
+- [github/advisory-database](https://github.com/github/advisory-database) · ★ 2.5k
 <!-- CONTRIBUTIONS:END -->
 
 ---
