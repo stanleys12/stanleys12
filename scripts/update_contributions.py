@@ -29,6 +29,29 @@ FLAGSHIP = [
     "jaegertracing/jaeger",
 ]
 
+# How each repo is introduced: (well-known name, who's behind it, what it is). Repos not listed here fall back
+# to their GitHub name + description, so new merges still read well. Only credit an org you're sure of.
+KNOWN = {
+    "numpy/numpy": ("NumPy", "", "the numerical computing library at the core of Python's data and ML stack"),
+    "puppeteer/puppeteer": ("Puppeteer", "Google", "the headless browser automation library for Chrome and Firefox"),
+    "openclaw/openclaw": ("OpenClaw", "", "the open-source personal AI agent"),
+    "openai/codex-security": ("Codex Security", "OpenAI", "CLI and SDK for finding and fixing security vulnerabilities"),
+    "sgl-project/sglang": ("SGLang", "", "high-performance serving framework for LLMs and multimodal models"),
+    "jaegertracing/jaeger": ("Jaeger", "CNCF, created at Uber", "distributed tracing platform"),
+    "nextlevelbuilder/ui-ux-pro-max-skill": ("UI/UX Pro Max", "", "design-intelligence skill for AI coding agents"),
+    "alexsjones/llmfit": ("llmfit", "", "finds which LLMs will run on your hardware"),
+    "duplicati/duplicati": ("Duplicati", "", "encrypted cloud backup software"),
+    "borgbackup/borg": ("BorgBackup", "", "deduplicating, encrypted backup archiver"),
+    "kornia/kornia": ("Kornia", "", "geometric computer vision library for PyTorch"),
+    "noctalia-dev/noctalia": ("Noctalia", "", "desktop shell for Wayland on Linux"),
+    "gyroflow/gyroflow": ("Gyroflow", "", "video stabilization from gyroscope data"),
+    "jtroo/kanata": ("Kanata", "", "cross-platform keyboard remapper"),
+    "datachain-ai/datachain": ("DataChain", "the DVC team", "versioned datasets for unstructured data"),
+    "mobile-artificial-intelligence/maid": ("Maid", "", "open-source app for running llama.cpp models locally"),
+    "nano-collective/nanocoder": ("Nanocoder", "", "open-source coding agent for the terminal"),
+    "github/advisory-database": ("GitHub Advisory Database", "GitHub", "the CVE and security advisory database behind Dependabot"),
+}
+
 
 def api(url):
     req = urllib.request.Request(url, headers={
@@ -61,11 +84,11 @@ def merged_repos():
     return counts
 
 
-def stars(full):
+def repo_meta(full):
     try:
-        return int(api(f"https://api.github.com/repos/{full}").get("stargazers_count") or 0)
-    except Exception:  # noqa: BLE001 — a missing star count only affects ordering
-        return 0
+        return api(f"https://api.github.com/repos/{full}")
+    except Exception:  # noqa: BLE001 — missing metadata only affects ordering and the blurb
+        return {}
 
 
 def fmt_stars(n):
@@ -78,14 +101,21 @@ def render(counts):
     if not counts:
         return "_No merged external contributions found yet._"
     flag = {r.lower(): i for i, r in enumerate(FLAGSHIP)}
-    star = {full: stars(full) for full in counts}
+    meta = {full: repo_meta(full) for full in counts}
+    star = {full: int(meta[full].get("stargazers_count") or 0) for full in counts}
     rows = sorted(counts, key=lambda f: (flag.get(f.lower(), len(flag)), -star[f], f.lower()))
     lines = []
     for full in rows:
         n = counts[full]
         times = f" · {n} PRs" if n > 1 else ""
         st = f" · ★ {fmt_stars(star[full])}" if star[full] else ""
-        lines.append(f"- [{full}](https://github.com/{full}){st}{times}")
+        name, org, what = KNOWN.get(full.lower(), (full.split("/")[1], "", ""))
+        if not what:
+            what = (meta[full].get("description") or "").strip()
+            what = (what[:90].rsplit(" ", 1)[0] + "…") if len(what) > 90 else what
+        by = f" ({org})" if org else ""
+        desc = f" — {what}" if what else ""
+        lines.append(f"- **[{name}](https://github.com/{full})**{by}{desc}  \n  <sub>`{full}`{st}{times}</sub>")
     return "\n".join(lines)
 
 
