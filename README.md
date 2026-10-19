@@ -59,11 +59,11 @@
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.1k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
-  <sub>`sgl-project/sglang` · ★ 37.3k</sub>
+  <sub>`sgl-project/sglang` · ★ 37.4k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 137.3k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 137.5k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.1k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
@@ -71,9 +71,11 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
-  <sub>`noctalia-dev/noctalia` · ★ 11.4k</sub>
+  <sub>`noctalia-dev/noctalia` · ★ 11.5k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
   <sub>`kornia/kornia` · ★ 11.4k</sub>
+- **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
+  <sub>`pwndbg/pwndbg` · ★ 11.1k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
   <sub>`gyroflow/gyroflow` · ★ 9.6k</sub>
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
