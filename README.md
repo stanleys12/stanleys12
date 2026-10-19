@@ -51,11 +51,11 @@
 
 <!-- CONTRIBUTIONS:START -->
 - **[NumPy](https://github.com/numpy/numpy)** — the numerical computing library at the core of Python's data and ML stack  
-  <sub>`numpy/numpy` · ★ 33k</sub>
+  <sub>`numpy/numpy` · ★ 33.1k</sub>
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.7k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 392.4k</sub>
+  <sub>`openclaw/openclaw` · ★ 392.5k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.1k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
@@ -63,7 +63,7 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 137.5k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 137.6k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.1k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
@@ -87,7 +87,7 @@
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.5k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
-  <sub>`github/advisory-database` · ★ 2.5k</sub>
+  <sub>`github/advisory-database` · ★ 2.5k · 2 PRs</sub>
 <!-- CONTRIBUTIONS:END -->
 
 ---
