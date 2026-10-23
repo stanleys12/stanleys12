@@ -63,9 +63,9 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139.3k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139.4k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 78.7k</sub>
+  <sub>`ruvnet/ruflo` · ★ 78.8k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.3k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
@@ -73,7 +73,7 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
-  <sub>`noctalia-dev/noctalia` · ★ 11.5k</sub>
+  <sub>`noctalia-dev/noctalia` · ★ 11.6k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
   <sub>`kornia/kornia` · ★ 11.4k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
