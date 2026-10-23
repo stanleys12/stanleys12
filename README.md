@@ -63,9 +63,9 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139.1k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 78.4k</sub>
+  <sub>`ruvnet/ruflo` · ★ 78.5k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.3k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
@@ -83,7 +83,7 @@
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
   <sub>`jtroo/kanata` · ★ 8k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
-  <sub>`Tencent/AI-Infra-Guard` · ★ 6.9k</sub>
+  <sub>`Tencent/AI-Infra-Guard` · ★ 7k</sub>
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
   <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
