@@ -63,7 +63,7 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139.7k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 139.8k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 78.9k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
@@ -90,6 +90,8 @@
   <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
   <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.7k</sub>
+- **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
+  <sub>`openlake-project/openlake` · ★ 2.6k</sub>
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.5k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
