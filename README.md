@@ -59,15 +59,15 @@
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.2k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
-  <sub>`sgl-project/sglang` · ★ 38k</sub>
+  <sub>`sgl-project/sglang` · ★ 38.1k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 140k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 140.1k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 79.1k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
-  <sub>`AlexsJones/llmfit` · ★ 38.3k</sub>
+  <sub>`AlexsJones/llmfit` · ★ 38.4k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
   <sub>`duplicati/duplicati` · ★ 15.2k</sub>
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
