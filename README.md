@@ -29,7 +29,7 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.7k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 393.1k</sub>
+  <sub>`openclaw/openclaw` · ★ 393.2k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.2k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
@@ -37,9 +37,9 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 140.7k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 140.9k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 79.4k</sub>
+  <sub>`ruvnet/ruflo` · ★ 79.5k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.4k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
@@ -54,6 +54,8 @@
   <sub>`pwndbg/pwndbg` · ★ 11.1k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
   <sub>`gyroflow/gyroflow` · ★ 9.6k</sub>
+- **[PraisonAI](https://github.com/MervinPraison/PraisonAI)** — PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping…  
+  <sub>`MervinPraison/PraisonAI` · ★ 9.3k</sub>
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
   <sub>`jtroo/kanata` · ★ 8k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
@@ -69,7 +71,7 @@
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.5k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
-  <sub>`github/advisory-database` · ★ 2.5k · 2 PRs</sub>
+  <sub>`github/advisory-database` · ★ 2.5k · 3 PRs</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
   <sub>`open-quantum-safe/oqs-provider` · ★ 507</sub>
 <!-- CONTRIBUTIONS:END -->
