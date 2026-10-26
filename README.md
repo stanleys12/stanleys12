@@ -16,32 +16,6 @@
 - **Automation & ML** — pipelines that do real work end-to-end, from OSS contribution to applied ML.
 - **Open source** — I contribute fixes upstream across the ecosystem (see the auto-updating list below).
 
----
-
-### GitHub in numbers
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=stanleys12&show_icons=true&count_private=true&hide_rank=true&hide_border=true&theme=tokyonight" alt="stats" />
-<img height="165" src="https://streak-stats.demolab.com/?user=stanleys12&hide_border=true&theme=tokyonight" alt="streak" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=stanleys12&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" alt="top languages" />
-
-</div>
-
----
-
-### Contribution activity
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/stanleys12/stanleys12/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/stanleys12/stanleys12/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" width="400" src="https://raw.githubusercontent.com/stanleys12/stanleys12/output/github-contribution-grid-snake.svg" />
-</picture>
-
-</div>
 
 ---
 
