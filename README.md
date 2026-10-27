@@ -37,11 +37,13 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.3k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 140.9k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 141k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 79.5k</sub>
+  <sub>`ruvnet/ruflo` · ★ 79.6k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.4k</sub>
+- **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
+  <sub>`Tencent/WeKnora` · ★ 35.6k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
   <sub>`duplicati/duplicati` · ★ 15.2k</sub>
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
