@@ -3,18 +3,10 @@
 # Hi, I'm Stanley
 
 <a href="https://github.com/stanleys12">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1000&color=6E7FEA&center=true&vCenter=true&width=620&lines=Security+%26+ML+engineer;Open-source+contributor;I+build+tools+that+sandbox+AI+agents" alt="what I do" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1000&color=6E7FEA&center=true&vCenter=true&width=620&lines=Security+%26+ML+engineer;Open-source+contributor" alt="what I do" />
 </a>
 
 </div>
-
----
-
-### What I work on
-
-- **AI-agent security** — [**SkillJail**](https://github.com/stanleys12/skilljail), a kernel-enforced least-privilege sandbox for AI-agent skills, and [**skill-scanner**](https://github.com/stanleys12/skill-scanner), a read-only, offline scanner that tells you whether a skill is safe to install *before* it touches your machine.
-- **Automation & ML** — pipelines that do real work end-to-end, from OSS contribution to applied ML.
-- **Open source** — I contribute fixes upstream across the ecosystem (see the auto-updating list below).
 
 
 ---
