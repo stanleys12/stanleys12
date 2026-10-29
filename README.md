@@ -29,7 +29,7 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.1k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.2k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 80k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
@@ -49,7 +49,7 @@
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
   <sub>`pwndbg/pwndbg` · ★ 11.1k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
-  <sub>`gyroflow/gyroflow` · ★ 9.6k</sub>
+  <sub>`gyroflow/gyroflow` · ★ 9.7k</sub>
 - **[PraisonAI](https://github.com/MervinPraison/PraisonAI)** — PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping…  
   <sub>`MervinPraison/PraisonAI` · ★ 9.3k</sub>
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
