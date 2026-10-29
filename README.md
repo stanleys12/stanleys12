@@ -21,15 +21,15 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.8k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 393.3k</sub>
+  <sub>`openclaw/openclaw` · ★ 393.4k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
-  <sub>`sgl-project/sglang` · ★ 38.3k</sub>
+  <sub>`sgl-project/sglang` · ★ 38.4k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.3k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.5k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 80.1k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
@@ -53,7 +53,7 @@
 - **[PraisonAI](https://github.com/MervinPraison/PraisonAI)** — PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping…  
   <sub>`MervinPraison/PraisonAI` · ★ 9.3k</sub>
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
-  <sub>`jtroo/kanata` · ★ 8k</sub>
+  <sub>`jtroo/kanata` · ★ 8.1k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
   <sub>`Tencent/AI-Infra-Guard` · ★ 7.2k</sub>
 - **[ouroboros](https://github.com/Q00/ouroboros)** — Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated,…  
