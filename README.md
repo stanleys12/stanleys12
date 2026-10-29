@@ -23,19 +23,19 @@
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
   <sub>`openclaw/openclaw` · ★ 393.3k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
-  <sub>`openai/codex-security` · ★ 11.2k</sub>
+  <sub>`openai/codex-security` · ★ 11.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
   <sub>`sgl-project/sglang` · ★ 38.3k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.2k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 142.3k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 80k</sub>
+  <sub>`ruvnet/ruflo` · ★ 80.1k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.5k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 35.8k</sub>
+  <sub>`Tencent/WeKnora` · ★ 35.9k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
   <sub>`bee-san/Ciphey` · ★ 21.7k</sub>
 - **[Duplicati](https://github.com/duplicati/duplicati)** — encrypted cloud backup software  
