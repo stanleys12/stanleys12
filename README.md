@@ -29,7 +29,7 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 143.4k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 143.5k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 80.4k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed…  
@@ -59,7 +59,7 @@
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
   <sub>`jtroo/kanata` · ★ 8.1k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
-  <sub>`Tencent/AI-Infra-Guard` · ★ 7.2k</sub>
+  <sub>`Tencent/AI-Infra-Guard` · ★ 7.3k</sub>
 - **[ouroboros](https://github.com/Q00/ouroboros)** — Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated,…  
   <sub>`Q00/ouroboros` · ★ 6.3k</sub>
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
