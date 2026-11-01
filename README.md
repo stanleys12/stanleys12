@@ -29,15 +29,15 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 143.5k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 143.6k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 80.4k</sub>
+  <sub>`ruvnet/ruflo` · ★ 80.5k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed…  
-  <sub>`JustVugg/colibri` · ★ 45.4k</sub>
+  <sub>`JustVugg/colibri` · ★ 45.5k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.5k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 36.1k</sub>
+  <sub>`Tencent/WeKnora` · ★ 36.2k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
   <sub>`bee-san/Ciphey` · ★ 21.7k</sub>
 - **[candle](https://github.com/huggingface/candle)** — Minimalist ML framework for Rust  
@@ -47,9 +47,9 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
-  <sub>`noctalia-dev/noctalia` · ★ 11.7k</sub>
+  <sub>`noctalia-dev/noctalia` · ★ 11.8k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
-  <sub>`kornia/kornia` · ★ 11.5k</sub>
+  <sub>`kornia/kornia` · ★ 11.6k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
   <sub>`pwndbg/pwndbg` · ★ 11.1k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
