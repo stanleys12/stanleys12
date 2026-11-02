@@ -29,15 +29,15 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 143.9k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 144.2k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 80.6k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed…  
-  <sub>`JustVugg/colibri` · ★ 45.9k</sub>
+  <sub>`JustVugg/colibri` · ★ 46.3k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.6k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 36.2k</sub>
+  <sub>`Tencent/WeKnora` · ★ 36.3k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
   <sub>`bee-san/Ciphey` · ★ 21.7k</sub>
 - **[candle](https://github.com/huggingface/candle)** — Minimalist ML framework for Rust  
@@ -47,7 +47,7 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
-  <sub>`kornia/kornia` · ★ 11.9k</sub>
+  <sub>`kornia/kornia` · ★ 12k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
   <sub>`noctalia-dev/noctalia` · ★ 11.8k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
@@ -65,7 +65,7 @@
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
   <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
-  <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.7k</sub>
+  <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.8k</sub>
 - **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
   <sub>`openlake-project/openlake` · ★ 2.6k</sub>
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
