@@ -29,15 +29,15 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 144.3k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 144.6k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 80.7k</sub>
-- **[colibri](https://github.com/JustVugg/colibri)** — Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed…  
-  <sub>`JustVugg/colibri` · ★ 46.5k</sub>
+  <sub>`ruvnet/ruflo` · ★ 80.8k</sub>
+- **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
+  <sub>`JustVugg/colibri` · ★ 47k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.6k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 36.3k</sub>
+  <sub>`Tencent/WeKnora` · ★ 36.4k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
   <sub>`bee-san/Ciphey` · ★ 21.7k</sub>
 - **[candle](https://github.com/huggingface/candle)** — Minimalist ML framework for Rust  
@@ -47,7 +47,7 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
-  <sub>`kornia/kornia` · ★ 12.1k</sub>
+  <sub>`kornia/kornia` · ★ 12.3k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
   <sub>`noctalia-dev/noctalia` · ★ 11.8k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
@@ -59,7 +59,7 @@
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
   <sub>`jtroo/kanata` · ★ 8.1k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
-  <sub>`Tencent/AI-Infra-Guard` · ★ 7.3k</sub>
+  <sub>`Tencent/AI-Infra-Guard` · ★ 7.4k</sub>
 - **[ouroboros](https://github.com/Q00/ouroboros)** — Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated,…  
   <sub>`Q00/ouroboros` · ★ 6.3k</sub>
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
@@ -67,7 +67,7 @@
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
   <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.8k</sub>
 - **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
-  <sub>`openlake-project/openlake` · ★ 2.6k</sub>
+  <sub>`openlake-project/openlake` · ★ 2.7k</sub>
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.5k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
