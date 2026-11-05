@@ -29,13 +29,13 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 145.2k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 145.3k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 80.9k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 47.7k</sub>
+  <sub>`JustVugg/colibri` · ★ 47.9k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
-  <sub>`AlexsJones/llmfit` · ★ 38.6k</sub>
+  <sub>`AlexsJones/llmfit` · ★ 38.7k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
   <sub>`Tencent/WeKnora` · ★ 36.5k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -51,7 +51,7 @@
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
   <sub>`noctalia-dev/noctalia` · ★ 11.8k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
-  <sub>`pwndbg/pwndbg` · ★ 11.1k</sub>
+  <sub>`pwndbg/pwndbg` · ★ 11.2k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
   <sub>`gyroflow/gyroflow` · ★ 9.7k</sub>
 - **[PraisonAI](https://github.com/MervinPraison/PraisonAI)** — Private AI agents for highly regulated teams, and for anyone who wants AI on their own…  
