@@ -21,7 +21,7 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.8k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 394k</sub>
+  <sub>`openclaw/openclaw` · ★ 394.1k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
@@ -29,15 +29,15 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 145.8k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 146.1k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 81k</sub>
+  <sub>`ruvnet/ruflo` · ★ 81.1k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 48.2k</sub>
+  <sub>`JustVugg/colibri` · ★ 48.4k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.7k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 36.6k</sub>
+  <sub>`Tencent/WeKnora` · ★ 36.7k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine for Stable Diffusion models, empowering…  
   <sub>`invoke-ai/InvokeAI` · ★ 29k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -68,10 +68,10 @@
   <sub>`h2oai/h2o-llmstudio` · ★ 5.2k</sub>
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
   <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
+- **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
+  <sub>`openlake-project/openlake` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
   <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.8k</sub>
-- **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
-  <sub>`openlake-project/openlake` · ★ 2.7k</sub>
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.6k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
@@ -79,7 +79,7 @@
 - **[circl](https://github.com/cloudflare/circl)** — CIRCL: Cloudflare Interoperable Reusable Cryptographic Library  
   <sub>`cloudflare/circl` · ★ 1.7k</sub>
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
-  <sub>`aws/aws-lc` · ★ 862</sub>
+  <sub>`aws/aws-lc` · ★ 861</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
   <sub>`open-quantum-safe/oqs-provider` · ★ 510</sub>
 - **[liboqs-python](https://github.com/open-quantum-safe/liboqs-python)** — Python 3 bindings for liboqs  
