@@ -29,11 +29,11 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 145.6k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 145.8k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 81k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 48.1k</sub>
+  <sub>`JustVugg/colibri` · ★ 48.2k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.7k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -51,7 +51,7 @@
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
   <sub>`kornia/kornia` · ★ 12.3k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
-  <sub>`noctalia-dev/noctalia` · ★ 11.8k</sub>
+  <sub>`noctalia-dev/noctalia` · ★ 11.9k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
   <sub>`pwndbg/pwndbg` · ★ 11.2k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
