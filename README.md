@@ -29,11 +29,11 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 146.4k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 146.5k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 81.1k</sub>
+  <sub>`ruvnet/ruflo` · ★ 81.2k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 48.6k</sub>
+  <sub>`JustVugg/colibri` · ★ 48.7k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.7k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -49,7 +49,7 @@
 - **[BorgBackup](https://github.com/borgbackup/borg)** — deduplicating, encrypted backup archiver  
   <sub>`borgbackup/borg` · ★ 13.9k</sub>
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
-  <sub>`kornia/kornia` · ★ 12.3k</sub>
+  <sub>`kornia/kornia` · ★ 12.4k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
   <sub>`noctalia-dev/noctalia` · ★ 11.9k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
@@ -66,10 +66,10 @@
   <sub>`Q00/ouroboros` · ★ 6.3k</sub>
 - **[h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio)** — H2O LLM Studio - a framework and no-code GUI for fine-tuning LLMs. Documentation:…  
   <sub>`h2oai/h2o-llmstudio` · ★ 5.2k</sub>
-- **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
-  <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
   <sub>`openlake-project/openlake` · ★ 2.8k</sub>
+- **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
+  <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
   <sub>`Mobile-Artificial-Intelligence/maid` · ★ 2.8k</sub>
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
