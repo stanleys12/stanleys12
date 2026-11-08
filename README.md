@@ -29,11 +29,11 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 146.7k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 146.9k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 81.2k</sub>
+  <sub>`ruvnet/ruflo` · ★ 81.3k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 48.9k</sub>
+  <sub>`JustVugg/colibri` · ★ 49.1k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.8k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -79,7 +79,7 @@
 - **[circl](https://github.com/cloudflare/circl)** — CIRCL: Cloudflare Interoperable Reusable Cryptographic Library  
   <sub>`cloudflare/circl` · ★ 1.7k</sub>
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
-  <sub>`aws/aws-lc` · ★ 861</sub>
+  <sub>`aws/aws-lc` · ★ 862</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
   <sub>`open-quantum-safe/oqs-provider` · ★ 510</sub>
 - **[liboqs-python](https://github.com/open-quantum-safe/liboqs-python)** — Python 3 bindings for liboqs  
