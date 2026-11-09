@@ -21,7 +21,7 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.8k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 394.2k</sub>
+  <sub>`openclaw/openclaw` · ★ 394.3k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 11.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
@@ -29,15 +29,15 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 147k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 147.3k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 81.3k</sub>
+  <sub>`ruvnet/ruflo` · ★ 81.4k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 49.2k</sub>
+  <sub>`JustVugg/colibri` · ★ 49.4k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
-  <sub>`AlexsJones/llmfit` · ★ 38.8k</sub>
+  <sub>`AlexsJones/llmfit` · ★ 38.9k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 36.9k</sub>
+  <sub>`Tencent/WeKnora` · ★ 37k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine that uses image and video generation models to…  
   <sub>`invoke-ai/InvokeAI` · ★ 29k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -67,7 +67,7 @@
 - **[h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio)** — H2O LLM Studio - a framework and no-code GUI for fine-tuning LLMs. Documentation:…  
   <sub>`h2oai/h2o-llmstudio` · ★ 5.2k</sub>
 - **[openlake](https://github.com/openlake-project/openlake)** — OpenLake is a high performance storage engine for efficient LLM inference and GPU Training  
-  <sub>`openlake-project/openlake` · ★ 2.9k</sub>
+  <sub>`openlake-project/openlake` · ★ 3k</sub>
 - **[DataChain](https://github.com/datachain-ai/datachain)** (the DVC team) — versioned datasets for unstructured data  
   <sub>`datachain-ai/datachain` · ★ 2.8k</sub>
 - **[Maid](https://github.com/Mobile-Artificial-Intelligence/maid)** — open-source app for running llama.cpp models locally  
@@ -75,13 +75,13 @@
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.6k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
-  <sub>`github/advisory-database` · ★ 2.5k · 3 PRs</sub>
+  <sub>`github/advisory-database` · ★ 2.5k · 4 PRs</sub>
 - **[circl](https://github.com/cloudflare/circl)** — CIRCL: Cloudflare Interoperable Reusable Cryptographic Library  
   <sub>`cloudflare/circl` · ★ 1.7k</sub>
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
   <sub>`aws/aws-lc` · ★ 862</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
-  <sub>`open-quantum-safe/oqs-provider` · ★ 511</sub>
+  <sub>`open-quantum-safe/oqs-provider` · ★ 512</sub>
 - **[liboqs-python](https://github.com/open-quantum-safe/liboqs-python)** — Python 3 bindings for liboqs  
   <sub>`open-quantum-safe/liboqs-python` · ★ 247</sub>
 <!-- CONTRIBUTIONS:END -->
