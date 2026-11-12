@@ -23,21 +23,21 @@
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
   <sub>`openclaw/openclaw` · ★ 394.4k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
-  <sub>`openai/codex-security` · ★ 11.7k</sub>
+  <sub>`openai/codex-security` · ★ 12.2k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
   <sub>`sgl-project/sglang` · ★ 38.8k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 148.2k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 148.5k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 81.5k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 50k</sub>
+  <sub>`JustVugg/colibri` · ★ 50.2k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.9k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 37.2k</sub>
+  <sub>`Tencent/WeKnora` · ★ 37.3k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine that uses image and video generation models to…  
   <sub>`invoke-ai/InvokeAI` · ★ 29.1k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -77,7 +77,7 @@
 - **[Nanocoder](https://github.com/Nano-Collective/nanocoder)** — open-source coding agent for the terminal  
   <sub>`Nano-Collective/nanocoder` · ★ 2.6k</sub>
 - **[GitHub Advisory Database](https://github.com/github/advisory-database)** (GitHub) — the CVE and security advisory database behind Dependabot  
-  <sub>`github/advisory-database` · ★ 2.5k · 4 PRs</sub>
+  <sub>`github/advisory-database` · ★ 2.6k · 4 PRs</sub>
 - **[circl](https://github.com/cloudflare/circl)** — CIRCL: Cloudflare Interoperable Reusable Cryptographic Library  
   <sub>`cloudflare/circl` · ★ 1.7k</sub>
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
