@@ -17,23 +17,23 @@
 
 <!-- CONTRIBUTIONS:START -->
 - **[NumPy](https://github.com/numpy/numpy)** — the numerical computing library at the core of Python's data and ML stack  
-  <sub>`numpy/numpy` · ★ 33.4k</sub>
+  <sub>`numpy/numpy` · ★ 33.3k</sub>
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.8k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 394.3k</sub>
+  <sub>`openclaw/openclaw` · ★ 394.4k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
-  <sub>`openai/codex-security` · ★ 11.5k</sub>
+  <sub>`openai/codex-security` · ★ 11.7k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
-  <sub>`sgl-project/sglang` · ★ 38.7k</sub>
+  <sub>`sgl-project/sglang` · ★ 38.8k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 148.1k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 148.2k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 81.5k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 49.9k</sub>
+  <sub>`JustVugg/colibri` · ★ 50k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 38.9k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -63,7 +63,7 @@
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
   <sub>`Tencent/AI-Infra-Guard` · ★ 7.5k</sub>
 - **[ouroboros](https://github.com/Q00/ouroboros)** — Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated,…  
-  <sub>`Q00/ouroboros` · ★ 6.3k</sub>
+  <sub>`Q00/ouroboros` · ★ 6.4k</sub>
 - **[h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio)** — H2O LLM Studio - a framework and no-code GUI for fine-tuning LLMs. Documentation:…  
   <sub>`h2oai/h2o-llmstudio` · ★ 5.2k</sub>
 - **[RuVector](https://github.com/ruvnet/RuVector)** — RuVector provides High Performance, Real-Time decisions and agent memory , Self-Learning…  
