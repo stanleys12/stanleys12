@@ -13,7 +13,7 @@
 
 ### Open-source contributions
 
-> Repositories where I've had pull requests merged, most notable first. This list rebuilds itself via GitHub Actions as new PRs land.
+
 
 <!-- CONTRIBUTIONS:START -->
 - **[NumPy](https://github.com/numpy/numpy)** — the numerical computing library at the core of Python's data and ML stack  
