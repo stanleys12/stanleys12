@@ -21,19 +21,19 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.8k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 394.5k</sub>
+  <sub>`openclaw/openclaw` · ★ 394.6k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
-  <sub>`openai/codex-security` · ★ 13.6k</sub>
+  <sub>`openai/codex-security` · ★ 13.7k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
   <sub>`sgl-project/sglang` · ★ 38.9k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 150.1k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 150.4k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 81.8k</sub>
+  <sub>`ruvnet/ruflo` · ★ 81.9k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 51.4k</sub>
+  <sub>`JustVugg/colibri` · ★ 51.6k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 39k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -81,7 +81,7 @@
 - **[circl](https://github.com/cloudflare/circl)** — CIRCL: Cloudflare Interoperable Reusable Cryptographic Library  
   <sub>`cloudflare/circl` · ★ 1.7k</sub>
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
-  <sub>`aws/aws-lc` · ★ 865</sub>
+  <sub>`aws/aws-lc` · ★ 866</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
   <sub>`open-quantum-safe/oqs-provider` · ★ 515</sub>
 - **[liboqs-python](https://github.com/open-quantum-safe/liboqs-python)** — Python 3 bindings for liboqs  
