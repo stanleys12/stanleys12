@@ -29,11 +29,11 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 151.3k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 151.5k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 82k</sub>
+  <sub>`ruvnet/ruflo` · ★ 82.1k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 51.9k</sub>
+  <sub>`JustVugg/colibri` · ★ 52k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 39.1k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -61,7 +61,7 @@
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
   <sub>`jtroo/kanata` · ★ 8.1k</sub>
 - **[AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard)** — A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan,…  
-  <sub>`Tencent/AI-Infra-Guard` · ★ 7.5k</sub>
+  <sub>`Tencent/AI-Infra-Guard` · ★ 7.6k</sub>
 - **[ouroboros](https://github.com/Q00/ouroboros)** — Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated,…  
   <sub>`Q00/ouroboros` · ★ 6.4k</sub>
 - **[h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio)** — H2O LLM Studio - a framework and no-code GUI for fine-tuning LLMs. Documentation:…  
