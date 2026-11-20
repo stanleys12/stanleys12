@@ -29,17 +29,17 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 151.9k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 152.1k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
-  <sub>`ruvnet/ruflo` · ★ 82.1k</sub>
+  <sub>`ruvnet/ruflo` · ★ 82.2k</sub>
 - **[docling](https://github.com/docling-project/docling)** — Get your documents ready for gen AI  
   <sub>`docling-project/docling` · ★ 70.8k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 52.3k</sub>
+  <sub>`JustVugg/colibri` · ★ 52.4k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 39.1k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 37.8k</sub>
+  <sub>`Tencent/WeKnora` · ★ 37.9k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine that uses image and video generation models to…  
   <sub>`invoke-ai/InvokeAI` · ★ 29.1k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -53,7 +53,7 @@
 - **[Kornia](https://github.com/kornia/kornia)** — geometric computer vision library for PyTorch  
   <sub>`kornia/kornia` · ★ 12.4k</sub>
 - **[Noctalia](https://github.com/noctalia-dev/noctalia)** — desktop shell for Wayland on Linux  
-  <sub>`noctalia-dev/noctalia` · ★ 12.1k</sub>
+  <sub>`noctalia-dev/noctalia` · ★ 12.2k</sub>
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
   <sub>`pwndbg/pwndbg` · ★ 11.2k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
