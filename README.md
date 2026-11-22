@@ -17,25 +17,25 @@
 
 <!-- CONTRIBUTIONS:START -->
 - **[NumPy](https://github.com/numpy/numpy)** — the numerical computing library at the core of Python's data and ML stack  
-  <sub>`numpy/numpy` · ★ 33.4k</sub>
+  <sub>`numpy/numpy` · ★ 33.5k</sub>
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.9k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
   <sub>`openclaw/openclaw` · ★ 395k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
-  <sub>`openai/codex-security` · ★ 14.2k</sub>
+  <sub>`openai/codex-security` · ★ 14.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
   <sub>`sgl-project/sglang` · ★ 38.9k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 152.4k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 152.6k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 82.2k</sub>
 - **[docling](https://github.com/docling-project/docling)** — Get your documents ready for gen AI  
-  <sub>`docling-project/docling` · ★ 70.8k</sub>
+  <sub>`docling-project/docling` · ★ 70.9k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 52.6k</sub>
+  <sub>`JustVugg/colibri` · ★ 52.7k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 39.2k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
@@ -57,7 +57,7 @@
 - **[pwndbg](https://github.com/pwndbg/pwndbg)** — Exploit Development and Reverse Engineering with GDB & LLDB Made Easy  
   <sub>`pwndbg/pwndbg` · ★ 11.2k</sub>
 - **[Gyroflow](https://github.com/gyroflow/gyroflow)** — video stabilization from gyroscope data  
-  <sub>`gyroflow/gyroflow` · ★ 9.7k</sub>
+  <sub>`gyroflow/gyroflow` · ★ 9.8k</sub>
 - **[PraisonAI](https://github.com/MervinPraison/PraisonAI)** — Private AI agents for highly regulated teams, and for anyone who wants AI on their own…  
   <sub>`MervinPraison/PraisonAI` · ★ 9.4k</sub>
 - **[Kanata](https://github.com/jtroo/kanata)** — cross-platform keyboard remapper  
