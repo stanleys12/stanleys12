@@ -29,17 +29,17 @@
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 153k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 153.3k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 82.3k</sub>
 - **[docling](https://github.com/docling-project/docling)** — Get your documents ready for gen AI  
   <sub>`docling-project/docling` · ★ 70.9k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 53k</sub>
+  <sub>`JustVugg/colibri` · ★ 53.1k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
   <sub>`AlexsJones/llmfit` · ★ 39.3k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
-  <sub>`Tencent/WeKnora` · ★ 38k</sub>
+  <sub>`Tencent/WeKnora` · ★ 38.1k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine that uses image and video generation models to…  
   <sub>`invoke-ai/InvokeAI` · ★ 29.1k</sub>
 - **[Ciphey](https://github.com/bee-san/Ciphey)** — ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings,…  
@@ -85,9 +85,9 @@
 - **[aws-lc](https://github.com/aws/aws-lc)** — AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team…  
   <sub>`aws/aws-lc` · ★ 864</sub>
 - **[oqs-provider](https://github.com/open-quantum-safe/oqs-provider)** — OpenSSL 3+ provider containing post-quantum algorithms  
-  <sub>`open-quantum-safe/oqs-provider` · ★ 517</sub>
+  <sub>`open-quantum-safe/oqs-provider` · ★ 518</sub>
 - **[liboqs-python](https://github.com/open-quantum-safe/liboqs-python)** — Python 3 bindings for liboqs  
-  <sub>`open-quantum-safe/liboqs-python` · ★ 247</sub>
+  <sub>`open-quantum-safe/liboqs-python` · ★ 246</sub>
 <!-- CONTRIBUTIONS:END -->
 
 ---
