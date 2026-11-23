@@ -21,23 +21,23 @@
 - **[Puppeteer](https://github.com/puppeteer/puppeteer)** (Google) — the headless browser automation library for Chrome and Firefox  
   <sub>`puppeteer/puppeteer` · ★ 95.9k · 2 PRs</sub>
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — the open-source personal AI agent  
-  <sub>`openclaw/openclaw` · ★ 395k</sub>
+  <sub>`openclaw/openclaw` · ★ 395.1k</sub>
 - **[Codex Security](https://github.com/openai/codex-security)** (OpenAI) — CLI and SDK for finding and fixing security vulnerabilities  
   <sub>`openai/codex-security` · ★ 14.3k</sub>
 - **[SGLang](https://github.com/sgl-project/sglang)** — high-performance serving framework for LLMs and multimodal models  
-  <sub>`sgl-project/sglang` · ★ 38.9k</sub>
+  <sub>`sgl-project/sglang` · ★ 39k</sub>
 - **[Jaeger](https://github.com/jaegertracing/jaeger)** (CNCF, created at Uber) — distributed tracing platform  
   <sub>`jaegertracing/jaeger` · ★ 23.4k</sub>
 - **[UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — design-intelligence skill for AI coding agents  
-  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 152.8k</sub>
+  <sub>`nextlevelbuilder/ui-ux-pro-max-skill` · ★ 153k</sub>
 - **[ruflo](https://github.com/ruvnet/ruflo)** — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate…  
   <sub>`ruvnet/ruflo` · ★ 82.3k</sub>
 - **[docling](https://github.com/docling-project/docling)** — Get your documents ready for gen AI  
   <sub>`docling-project/docling` · ★ 70.9k</sub>
 - **[colibri](https://github.com/JustVugg/colibri)** — A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA,…  
-  <sub>`JustVugg/colibri` · ★ 52.9k</sub>
+  <sub>`JustVugg/colibri` · ★ 53k</sub>
 - **[llmfit](https://github.com/AlexsJones/llmfit)** — finds which LLMs will run on your hardware  
-  <sub>`AlexsJones/llmfit` · ★ 39.2k</sub>
+  <sub>`AlexsJones/llmfit` · ★ 39.3k</sub>
 - **[WeKnora](https://github.com/Tencent/WeKnora)** — Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an…  
   <sub>`Tencent/WeKnora` · ★ 38k</sub>
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** — Invoke is a leading creative engine that uses image and video generation models to…  
