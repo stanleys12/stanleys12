@@ -1,15 +1,5 @@
 <div align="center">
 
-# Hi, I'm Stanley
-
-<a href="https://github.com/stanleys12">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1000&color=6E7FEA&center=true&vCenter=true&width=620&lines=Security+%26+ML+engineer;Open-source+contributor" alt="what I do" />
-</a>
-
-</div>
-
-
----
 
 ### Open-source contributions
 
